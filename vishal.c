@@ -31,7 +31,7 @@ int main()
 		//end of the file
 		fseek(fptr, 0, SEEK_END);
 		printf("%ld\n",ftell(fptr));
-		
+		//vishal Bandhekar
 	fclose(fptr);
 	
 return 0;
