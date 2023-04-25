@@ -1,0 +1,26 @@
+#include<include.h>
+#include<stdlib.h>
+int main()
+{
+	FILE *fptr=NULL;//file pointer
+	char *cptr=NULL://character pointer
+
+	//Writing into the file 
+	fptr = fopen("sample.txt", "w"); //Opening a file in write mode	
+	
+	cptr = (char)calloc(50,sizeof(char));//Allocating size for the char array using calloc
+
+	cptr[] = "C Dynamic Memory Allocation can be defined as a procedure in which the size of a data structure (like Array) is changed during the runtime.C provides some functions to achieve these tasks. There are 4 library functions provided by C defined under <stdlib.h> header file to facilitate dynamic memory allocation in C programming."
+
+	if(fptr==NULL)
+	{	
+		printf("Unable to open the file");
+	}
+	else
+	{
+				fprintf(fptr,cptr);//Writing into the file using fprintf() function
+
+	}
+	
+return 0;
+}
